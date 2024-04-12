@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url('../image/baclk.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 22px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.header .menu .dropdown i {
+    font-size: 12px;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    top: calc(50% - 5px);
+    right: 0;
+}
+
+.header .menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: hsl(192, 56%, 42%);
+    width: 150px;
+    padding: 15px 5px;
+    border-radius: 5px;
+    transform-origin: top;
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header .menu li:hover > .sub-menu {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+.header .menu li > .sub-menu_right {
+    top: 30px;
+    left: 100%;
+    right: 0;
+}
+
+.header .menu li .box {
+    transform: rotate(-90deg);
+}
+
+

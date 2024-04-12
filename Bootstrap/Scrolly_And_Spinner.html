@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Css Boostrap 5 link -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: 0.5rem;
+            overflow: auto;
+        }
+
+        .scrollspy-example-2 {
+            position: relative;
+            height: 200px;
+            margin-top: 0.5rem;
+            overflow: auto;
+        }
+
+        .box {
+            padding-left: 150px;
+        }
+
+        section {
+            height: 60vh;
+            width: 100%;
+            background-image: url('./IMAGE/perswon.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            color: #f5e4e4;
+            border-radius: 30px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+  <body>    
+        <div class="container">
+             <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                <a class="navbar-brand" href="#">
+                    <img src="./IMAGE/coder.jpg" alt="logo" class="img-fluid" style="width: 100px; border-radius: 30px;">
+                </a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">First</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                <h4 id="scrollspyHeading1">First heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, iusto accusamus amet nobis eligendi beatae debitis nemo doloribus explicabo provident. Tempora temporibus nostrum dicta odit, ipsam fuga quis dolore. Autem, cupiditate! Quia fuga molestiae, reprehenderit saepe impedit earum nobis.</p>
+                <h4 id="scrollspyHeading2">Second heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facilis in sequi, voluptates doloribus impedit veniam earum, reiciendis labore illum velit blanditiis, vero voluptatibus animi ab consectetur sit sapiente. Voluptate ipsa officia id optio natus perspiciatis vitae modi, maiores expedita.</p>
+                <h4 id="scrollspyHeading3">Third heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam ipsa eius excepturi iure inventore molestiae fugit dolor pariatur itaque libero ipsam dolore, sint sed temporibus obcaecati officiis aliquam cupiditate ex doloremque accusamus rerum rem. Quisquam enim similique quos distinctio.</p>
+                <h4 id="scrollspyHeading4">Fourth heading</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore voluptas velit aliquid laborum eius delectus fugiat dolorum quibusdam ipsa, corporis quis laboriosam ducimus officiis beatae totam minima asperiores magni, nisi tenetur quos optio! Tenetur exercitationem fuga voluptas reprehenderit, optio quasi?</p>
+                <h4 id="scrollspyHeading5">Fifth heading</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque necessitatibus enim omnis debitis quaerat neque, beatae numquam ex quasi sit. Placeat, consequatur, voluptatibus itaque aliquam unde voluptatem fugit quidem nostrum enim molestias vero totam aut dicta, deleniti et accusantium!</p>
+              </div>
+
+              <div class="container">
+                <div class="row mt-5 mb-5border">
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia vero dolorem ad deserunt adipisci error amet voluptatibus iusto saepe non necessitatibus nam tenetur at possimus quam consequuntur excepturi voluptatum obcaecati quos est porro, molestiae magnam esse. Blanditiis repellat repudiandae porro.\</p>
+                        <button class="btn btn-primary" type="button">Send</button>
+                    </div>
+                    <div class="col-lg-6 box">
+                        <img src="./IMAGE/note.jpg" alt="lofo" class="img-fluid">
+                    </div>
+                  </div>
+              </div>
+
+              <section class="container mt-5 mb-5">
+                    <h1>Hello Won</h1> 
+                    <label for="text" class="form-label">Ism</label>
+                    <input type="text" class="form-control" id="text">
+              </section>
+
+              <div class="row">
+                <div class="col-4">
+                  <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link" href="#item-1">Item 1</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                      </nav>
+                      <a class="nav-link" href="#item-2">Item 2</a>
+                      <a class="nav-link" href="#item-3">Item 3</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                      </nav>
+                    </nav>
+                  </nav>
+                </div>
+              
+                <div class="col-8">
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                    <div id="item-1">
+                      <h4>Item 1</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam omnis alias odio amet excepturi nesciunt error commodi inventore! Esse iure molestias laudantium accusamus molestiae autem distinctio cum qui recusandae?</p>
+                    </div>
+                    <div id="item-1-1">
+                      <h5>Item 1-1</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam omnis alias odio amet excepturi nesciunt error commodi inventore! Esse iure molestias laudantium accusamus molestiae autem distinctio cum qui recusandae?</p>
+                    </div>
+                    <div id="item-1-2">
+                      <h5>Item 1-2</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam omnis alias odio amet excepturi nesciunt error commodi inventore! Esse iure molestias laudantium accusamus molestiae autem distinctio cum qui recusandae?</p>
+                    </div>
+                    <div id="item-2">
+                      <h4>Item 2</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam omnis alias odio amet excepturi nesciunt error commodi inventore! Esse iure molestias laudantium accusamus molestiae autem distinctio cum qui recusandae?</p>
+                    </div>
+                    <div id="item-3">
+                      <h4>Item 3</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam omnis alias odio amet excepturi nesciunt error commodi inventore! Esse iure molestias laudantium accusamus molestiae autem distinctio cum qui recusandae?</p>
+                    </div>
+                    <div id="item-3-1">
+                      <h5>Item 3-1</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam omnis alias odio amet excepturi nesciunt error commodi inventore! Esse iure molestias laudantium accusamus molestiae autem distinctio cum qui recusandae?</p>
+                    </div>
+                    <div id="item-3-2">
+                      <h5>Item 3-2</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam omnis alias odio amet excepturi nesciunt error commodi inventore! Esse iure molestias laudantium accusamus molestiae autem distinctio cum qui recusandae?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-secondary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+              </div>
+              <div class="container mb-5 mt-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="container mb-5 mt-5">
+                <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span class="visually-hidden" role="status">Loading...</span>
+                  </button>
+                  <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status">Loading...</span>
+                  </button>
+              </div>
+        </div>
+            <!-- Boostrap 5 JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

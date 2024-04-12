@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        label {
+            font-size: 20px;
+        }
+
+        body {
+            background-color: #32b393;
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="email-input" class="form-label">
+                    Email Manzili
+                </label>
+                <input type="email" class="form-control" id="form-input">
+            </div>
+            <div class="mb-3">
+                <label for="password-input" class="form-label">
+                    Parol
+                </label>
+                <input type="password" class="form-control" id="password-input">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox-input">
+                <label for="checkbox-info" class="form-check-label">
+                    Yodda Saqlash
+                </label>
+                <button type="submit" class="btn btn-primary">Yuborish</button>
+            </div>  
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="#">
+            <label for="password-input" class="form-label">Parol</label>
+            <input type="password" id="password-input" class="form-control" aria-describedby="password-help">
+            <div id="password-help" class="form-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ullam!
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="#">
+            <input type="text" id="disabled-input" placeholder="Ma'lumot Kiritishning imkoniyati yo'q" class="form-control" disabled> 
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="#">
+            <div class="mb-3">
+                <label for="email-input" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email-input" placeholder="...@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="example-textarea" class="form-label">Textarea uchun</label>
+                <textarea  id="example-textarea" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+   </div>
+
+   <div class="container">
+        <form action="#">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Bahrom">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Bahrom">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Bahrom">
+            </div>
+        </form>
+   </div>
+
+   <div class="container">
+        <form action="#">
+            <label for="file-input" class="form-label">Fayl yuklab olish uchun</label>
+            <input type="file" id="file-input" class="form-control">
+        </form>
+   </div>
+
+   <div class="container">
+        <label for="color-input" class="form-label">Color</label>
+        <input type="color" class="form-control form-control-color" id="color-input" 
+        value="#563d7c" title="Rang tanlash">
+   </div>
+
+
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

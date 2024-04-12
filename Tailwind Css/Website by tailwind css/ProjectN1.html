@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project N1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Javascript section -->
+    <script>
+        tailwind.config = {
+          content: ["./build/*.html"],  
+          theme: {
+            extend: {
+              screens: {
+                'widescreen': { 'raw': '(min-aspect-ratio: 3/2 )'},
+                'tallscreen': { 'raw': '(min-aspect-ratio: 13/20 )'},
+              },
+
+              keyframes: {
+                'open-menu': {
+                    '0%': {transform: 'scaleY(0)'},
+                    '80%': {transform: 'scaleY(1.2)'},
+                    '100%': {transform: 'scaleY(1)'},
+                },
+              },
+              animation: {
+                'open-menu':  'open-menu 0.5s ease-in-out forwards',
+              }
+
+            }
+          }
+        }
+    </script>
+    <!-- Style.css section -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .section-min-height {
+                min-height: calc(100vh - 68px);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+                <header class="bg-teal-700 text-white sticky top-0 z-10">
+                    <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+                        <h1 class="text-3xl font-medium">
+                            <a href="#hero">🚀Acme Rockets</a>
+                        </h1>
+                        <div>
+                            <button class="text-3xl sm:hidden focus:outline-none cursor-pointer" id="mobile-open-button">
+                                &#9776;
+                            </button>
+                            <nav class="hidden sm:block space-x-8 text-xl" aria-label="menu">
+                                <a href="#rockets" class="hover:opacity-90">
+                                    Our Rockets
+                                </a>
+                                <a href="#testimonials" class="hover:opacity-90">
+                                    Testimonials
+                                </a>
+                                <a href="#contact" class="hover:opacity-90">
+                                    Contact Us
+                                </a>
+                            </nav>
+                        </div>
+                    </section>
+                    <section id="mobile-menu" class="absolute top-0 pb-1 dark:bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+                        <button class="text-8xl self-end px-6 ">
+                                &times;
+                        </button>
+                        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                            <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
+                            <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">Our Rockets</q>
+                            <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
+                            <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
+                            <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
+                        </nav>
+                    </section>
+                </header>
+
+                <main class="max-w-4xl mx-auto">
+
+                <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row    p-6 mb-12 items-center gap-8 pt-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+                    <article class="sm:w-1/2">
+                        <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+                            We Boldy Go <span class="text-indigo-700 dark:text-indigo-300"> Where No Rocket</span> Has Gone Before...
+                        </h2>
+                        <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+                            We are bulding Rockets for the next centry today. From the moon to Mars, Jupiter and beyond...
+                        </p>
+                        <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+                            Think Arme Rockets
+                        </p>
+                    </article>
+                    <img src="../IMAGE/rokets.jpg" class="w-1/2 rounded-3xl" alt="Rocket Dab">
+                </section>
+                <hr class="mx-auto bg-black dark:bg-white w-1/2">
+
+                <section id="rockets" class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height">
+                    <h2 class="text-4xl text-center font-bold sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                        Our Rockets
+                    </h2>
+                    <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                        <li class="w-2/3 sm:w-5/6 flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl dark:bg-black">
+                                <img src="../IMAGE/roket2.png" alt="" class="w-1/2 mb-6 mx-auto rounded-3xl">
+                                <h3 class="text-3xl text-center text-slate-900 dark:text-white">Explorer</h3>
+                                <p class="hidden sm:block text-center text-2xl text-sky-700 font-semibold dark:text-slate-500">
+                                    <i class="fa-solid fa-users-gear text-teal-700 text-2xl py-1"></i> 12K
+                                </p>
+                                <p class="sm:hidden mt-2 text-center text-slate-900 dark:text-white">Affortable Exploration</p>
+                        </li>   
+                        <li class="w-2/3 sm:w-5/6 flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl dark:bg-black">
+                            <img src="../IMAGE/rokets.jpg" alt="" class="w-1/2 mb-6 rounded-3xl mx-auto">
+                            <h3 class="text-3xl text-center text-slate-900 dark:text-white">Adventurer</h3>
+                            <p class="hidden sm:block text-center text-sky-700 font-semibold text-2xl dark:text-slate-500">
+                                <i class="fa-solid fa-users-line text-teal-700 text-2xl"></i> 15K
+                            </p>
+                            <p class="sm:hidden mt-2 text-center text-slate-900 dark:text-white">Best Seiling Rockets</p>
+                    </li>  
+                    <li class="w-2/3 sm:w-5/6 flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl dark:bg-black">
+                        <img src="../IMAGE/roket3.jpg" alt="" class="w-1/2 mb-6 mx-auto rounded-3xl">
+                        <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+                            Infinity
+                        </h3>
+                        <p class="hidden sm:block text-center text-sky-700 font-semibold text-2xl dark:text-slate-500">
+                            <i class="fa-solid fa-users text-2xl text-teal-700"></i> 5K
+                        </p>
+                        <p class="sm:hidden mt-2 text-center text-slate-900 dark:text-white">Luxury Starship</p>
+                </li>  
+                    </ul>
+                </section>
+
+                <hr class="mx-auto bg-black dark:bg-white w-1/2">
+
+                <section id="testimonials" class="p-6 my-12 container mx-auto scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+                    <h2 class="text-4xl text-center font-bold sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                        Testimonials
+                    </h2>
+                    <figure class="my-12">
+                            <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                                <p 
+                                    class="text-2xl sm:text-3xl text-left mt-2 text-white px-5 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:bottom-0
+                                    after:bottom-[-60px] after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.  repellat recusandae saepe corporis qui quibusdam autem, fuga vel beatae optio? Ea.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae?
+                                </p>
+                            </blockquote>
+                            <figcaption class="italic text-xl sm:text-2xl text-right
+                                text-slate-500 dark:text-slate-400">
+                                &#8212;Wile E. Coyote, Genius 
+                            </figcaption>
+                    </figure>
+
+                    <figure class="my-12">
+                        <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                            <p 
+                                class="text-2xl sm:text-3xl text-left mt-2 text-white px-5 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:bottom-0
+                                after:bottom-[-60px] after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                                I knew I not  only wanted &#8212; <span class="italic">I needed</span> &#8212; Acme's Infinity 
+                                Rockets for mission in scare. Acme delivered in one day! Nothing says <q class="italic">Take me to your leader</q>
+                                Like Acme's Infinity Rocket! 💯  
+                            </p>
+                        </blockquote>
+                        <figcaption class="italic text-xl sm:text-2xl text-right
+                            text-slate-500 dark:text-slate-400">
+                            &#8212;Mayk Faradey
+                        </figcaption>
+                    </figure>
+
+                <figure class="my-12">
+                    <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                        <p 
+                            class="text-2xl sm:text-3xl text-left mt-2 text-white px-5 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:bottom-0
+                            after:bottom-[-60px] after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.  repellat recusandae saepe corporis qui &#8212; <span class="italic text-slate-100">quibusdam autem, fuga vel beatae optio? Ea.</span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae?
+                        </p>
+                    </blockquote>
+                    <figcaption class="italic text-xl sm:text-2xl text-right
+                        text-slate-500 dark:text-slate-400">
+                        &#8212;Tomas MooR & K9
+                    </figcaption>
+                </section>
+
+                <hr class="mx-auto bg-black dark:bg-white w-1/2">
+
+                <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+                    <h2 class="text-4xl text-center font-bold sm:text-5xl mb-6 text-slate-900   dark:text-white">
+                        Contact Us
+                    </h2>
+                    <form 
+                            action="" class="max-w-4xl mx-auto text-2xl flex flex-col items-left gpa-4            sm:text-3xl">  
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" minlength="3" maxlength="60" placeholder="Your Subject" required class="w-full outline-blue-500 my-3 text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-500 border-2 dark:border-none"/>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="text-2xl my-3 sm:text-3xl text-black rounded-xl outline-blue-500 p-3 border border-2 border-slate-500 dark:border-none"></textarea>
+                            <button class="bg-teal-800 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 mt-3 transition duration-300 shadow-xl dark:border-none">Submit</button>
+                    </form>
+                </section>
+
+                </main>
+
+                <footer class="bg-teal-700 text-white text-xl" id="footer">
+                        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+                                <address>
+                                    <h2>Acme Roket-Powered Products, INC</h2>
+                                    555 Astro Way <br>
+                                    Farield, New Jersey 124531-5555<br>
+                                    EMAIL: <a href="#">Inquires@AcmeRockets.com</a>
+                                    <br>Phone: <a href="#">(+998-97-522-04-08)</a>
+                                </address>
+                                <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                                    <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+                                    <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                                    <a href="#contact" class="hover:opacity-90">Contact Us</a>
+                                </nav>
+                                <div class="flex flex flex-col sm:gap-2">
+                                    <p class="text-right">CopyRight &copy; <span id="year">2022</span></p>
+                                    <p class="text-right">All Rights Reserved</p>
+                                    <button class="btn">sdadasd</button>
+                                </div>
+                        </section>
+                </footer>
+
+                <script defer>
+                    const initApp = () => {
+                        const hamburgerBtn = document.getElementById('hamburger-button')
+                        const  mobileMenu = document.getElementById('mobile-menu')
+                        const toggleMenu = () => {
+                            mobileMenu.classList.toggle('hidden')
+                            mobileMenu.classList.toggle('flex')
+                        }
+
+                        hamburgerBtn.addEventListener('click', toggleMenu)
+                        mobileMenu.addEventListener('click', toggleMenu)
+                    }
+
+                    document.addEventListener('DOMContentLoaded', initApp)
+                </script>
+</body>
+</html>

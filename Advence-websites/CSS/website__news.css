@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #19211A;
+}
+
+header nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+}
+
+header nav {
+    width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    background-color: #19211A;
+}
+
+header nav h1 {
+    color: #dddd;
+    font-size: 40px
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.header__info p {
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.header__info {
+    padding-top: 150px;
+}
+
+header nav {
+    width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    background-color: #19211A;
+}
+
+/* Header section ends here */
+
+.navbar img {
+    width: 80%;
+    margin-top: 80px;  
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.main {
+    display: grid;
+    padding: 30px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+    color: #Ddd;
+    font-size: 18px;
+}
+
+.banner img {
+    margin: 100px 0px;
+    width: 100%;
+    height: 200vh;
+    border-radius: 20px;
+}
+
+.prosses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1);
+    width: 90%;
+    margin: 0 auto;
+}
+
+h3 {
+    color: #ddd;
+    font-size: 30px;
+}
+
+.btn {
+    width: 80%;
+    background-color: #19211A;
+    color: #fff;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 7px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    color:#19211A;
+    background-color: #fff;
+}
+
+.decades {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.decades__img img {
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+}
+
+.decades__item h2 {
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 2.4rem;
+}
+
+.decades__item p {
+    color: #ddd;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.footer__info h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer__info {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+}
+
+.footer-info__menu ul li {
+    list-style: none ;
+    padding: 5px 0;
+}
+
+.footer-info__menu ul li a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 17px;
+}
+
+.footer-info__get ul li {
+    list-style: none ;
+    padding: 5px 0;
+}
+
+.footer-info__get ul li a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 17px;
+}
+
+.footer-info__adress ul li {
+    list-style: none ;
+    padding: 5px 0;
+}
+
+.footer-info__adress ul li a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 17px;
+}
+
+.footer {
+    padding-top: 100px;
+}
+
+.footer h1 {
+    font-size: 4.4rem;
+    color: #ddd;
+}
+
+.footer__link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px 10px;
+}
+
+.footer-link__item {
+    padding: 10px;
+    color: #ddd;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 990px) {
+    header nav h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
+    header nav ul  {
+        display: none;
+    }
+
+    .navbar img {
+        width: 100%;
+    }
+
+    .banner img {
+        height: 100vh;
+    }
+
+    .main {
+        display: grid;
+        padding: 30px 0;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 20px;
+        color: #Ddd;
+        font-size: 18px;
+    }
+
+    .prosses {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(1);
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .decades {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    
+    .decades__img img {
+        margin-top: 40px;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .decades__item h2 {
+        margin-top: 10px;
+        color: #ddd;
+        font-size: 2.4rem;
+    }
+    
+    .decades__item p {
+        color: #ddd;
+        font-size: 18px;
+        margin-top: 100px;
+    }
+
+    
+    .footer__link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    header nav h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0 auto;
+    }
+
+    header nav ul  {
+        display: none;
+    }
+
+    .header__info p {
+        font-size: 40px;
+    }
+
+    .navbar img {
+        width: 100%;
+    }
+
+    .banner img {
+        height: 100vh;
+    }
+
+    .main {
+        display: grid;
+        padding: 30px 0;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 20px;
+        color: #Ddd;
+        font-size: 18px;
+    }
+
+    .prosses {
+        display: grid;
+        grid-template-columns: repeat(1, 70%);
+        grid-template-rows: repeat(1);
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .decades {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    
+    .decades__img img {
+        margin-top: 40px;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .decades__item h2 {
+        margin-top: 10px;
+        color: #ddd;
+        font-size: 2.4rem;
+    }
+    
+    .decades__item p {
+        color: #ddd;
+        font-size: 18px;
+        margin-top: 100px;
+    }
+
+
+
+    
+    .footer__link {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .footer__info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        font-size: 20px;
+    }
+
+    .footer h1 {
+        font-size: 3rem;
+        padding: 20px 20px;
+    }
+}

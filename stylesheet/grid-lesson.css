@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.grid-wrapper {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.item {
+    padding: 20px;
+    background-color: bisque;
+    text-align: center;
+    font-size: 30px;
+    bordeR: 1px solid #05d3ee;
+}
+
+.item-1 {
+    grid-column: span 4;
+    height: 170px; 
+    border-bottom: 5px solid coral;
+    background-image: url(../Advence-websites/image/game.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.item-7 {
+    grid-column: span 4;
+    background-image: url(../Advence-websites/image/game.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.item-2,
+.item-5 {
+    grid-row: span 2;
+}
+
+.item-3,
+.item-6  {
+    grid-column: span 2 ;
+}
+
+.header {
+    display: flex;
+   align-items: center;
+}
+
+.header  img {
+    width: 140px;
+    padding-left: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.header ul li {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 80px;
+    border: 1px solid rgba(3, 44, 99, 0.404);
+    border-radius: 30px;
+    background-color: #ffee04;
+    padding: 7px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #ec1111;
+    transition: 0.5s;
+}
+
+.header ul li:hover {
+    background-color: #ec1111;
+}
+
+.header ul li a:hover {
+    color: #ffd902;
+}
+
+.header ul input {
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 120px;
+    font-size: 17px;
+    background-color: #95dce6;
+}
+
+.btn {
+    cursor: pointer;
+   width: 100px;
+   border: 1px solid black;
+   overflow: none;
+   border-radius: 10px;
+   margin-left: 15px;
+   font-size: 17px;
+   padding: 7px;
+   transition: 0.5s;
+   background-color: #d1ff2b;
+}
+
+.btn:hover {
+    color: rgb(248, 234, 234);
+    background-color: #0b127a57;
+}
+
+/* header section ends here */
+
+.section-1 {
+    background-image: url(../hotel2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section-1__info img {
+    width: 130px;
+    border: 2px solid rgb(86, 86, 235);
+    border-radius: 30%;
+}
+
+.section-1__info p {
+    color: #d1ff2b;
+}
+
+.section-1 .box {
+    width: 200px;
+}
+
+/* Section-1 Ends here */
+
+.section-2 {
+    background-image: url(../blue.jpg);
+    background-position: bottom top;
+    background-size: cover;
+}
+
+.section-2 h1 {
+    color: #013d97;
+}
+
+.section-3 {
+    background-image: url(../hotel3.jpg);
+    background-position: bottom top;
+    background-size: cover;
+}
+
+.section-3   {
+    border: 1px solid red;  
+    display: flex;  
+    justify-content: space-between;
+}
+
+.section-3 .content {
+    background-color: #95dce6;
+    border: 2px solid rgb(54, 172, 8);
+    padding: 2px;
+}
+
+/* Section-3 Ends here */
+
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.footer__description {
+    display: flex;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.footer__description img {
+    height: 150px;
+    width: 220px;
+}
+
+.footer__description p {
+    width: 35%;
+    bordeR: 3px solid rgb(9, 255, 0);
+    font-size: 17px;
+    color: #ddd;
+    background-color: #9892ca;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <title>Validation</title>
+</head>
+<body>
+
+      <div class="container mt-4">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="Validation" class="form-label">First Name</label>
+              <input type="text" id="Validation" class="form-control" value="Bahrom" required>
+              <div class="valid-feedback">
+                Looks good
+              </div>
+            </div>
+            <div class="col-md-4">
+                <label for="Validation02" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="Validation02" value="Bobomurodov" required>
+                <div class="valid-feedback">
+                    Looks good
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="uservalidition" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="uservalidition">@</span>
+                    <input type="text" class="form-control" id="uservalidition" aria-describedby="uservalidition" required>
+                    <div class="invalid-feedback">
+                          Please choose the name
+                    </div>  
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" required>
+                <div class="invalid-feedback">
+                      Please provide a valid City
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" required>
+                    <option value="1">Tashkent</option>
+                    <option value="2">Moscow</option>
+                    <option value="3">Boku</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please provide a valid State
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zip" required>
+                <div class="invalid-feedback">
+                    Please provide a valid Zip
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check" required>
+                  <label for="check" class="form-check-label">
+                       Agree to terms and conditions
+                  </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+          </form>
+      </div>
+
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+     </script>
+
+       <!-- Bootstrap.js -->
+       <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

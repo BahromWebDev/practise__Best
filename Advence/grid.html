@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+
+         .grid-conteiner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) ;
+            grid-gap: 10px;
+            padding: 10px;
+            background-color: rgb(16, 231, 88);
+            color: blue;
+            grid-template-areas:
+               "header header header header"
+               "sidebar main main advertise"
+               "footer footer footer footer"
+               ;
+         }
+
+         .item {
+            padding: 20px;
+            background-color:  #FDEBCD;
+            border-radius: 10px;
+            border: 1px solid rgb(31, 27, 27);
+            font-family: sans-serif;
+            font-size: 30px;
+            text-align: center;
+         }
+         
+          .item-1 {
+            grid-area: header;
+         }
+
+         .item-2 {
+           grid-area: sidebar;
+         }
+
+         .item-3{
+            grid-area: main;
+         } 
+
+         .item-4{
+            grid-area: advertise;
+         } 
+
+         .item-5{
+            grid-area: footer;
+         } 
+
+         @media only screen and (max-width: 1024px) {
+            .grid-conteiner {
+               grid-template-areas: 
+                  "header header header"
+                  "sidebar sidebar sidebar"
+                  "main main advertise"
+                  "footer footer footer"
+               ;
+            }
+         }
+
+         @media only screen and (max-width: 768px) {
+            .grid-conteiner {
+               grid-template-areas: 
+                  "header header"
+                  "sidebar sidebar"
+                  "main advertise"
+                  "footer footer"
+               ;
+            }
+         }
+
+         @media only screen and (max-width: 524px) {
+            .grid-conteiner {
+               grid-template-areas: 
+                  "header"
+                  "sidebar"
+                  "main"
+                  "advertise"
+                  "footer"
+               ;
+            }
+         }
+    </style>
+</head>
+<body>
+            <div class="grid-conteiner">
+                <div class="item item-1">Header</div>
+                <div class="item item-2">Sidebar</div>
+                <div class="item item-3">Main</div>
+                <div class="item item-4">Advertise</div>
+                <div class="item item-5">Footer</div>
+            </div>  
+            
+</body>
+</html>

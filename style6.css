@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url("./islam2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.main h1 {
+    right: 100px;
+    position: absolute;
+    color: #ddd;
+    font-size: 50px;
+    font-family: sans-serif;
+    letter-spacing: 20px;
+    border: 3px solid red;
+    top: 20px;
+    border-radius: 30px;
+    padding: 0px 10px;
+    cursor:pointer;
+    background-image: radial-gradient(orange, red, yellow);
+}

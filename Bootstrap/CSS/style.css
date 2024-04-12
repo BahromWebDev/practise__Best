@@ -1,0 +1,36 @@
+.row {
+    margin-top: 20px;
+}
+
+.row > div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* background-color: #eaeaea; */
+    border: 1px solid blue;
+    text-align: center;
+}
+
+
+.box {
+    background-color: rgb(84, 4, 116);
+    color:aliceblue;
+}
+
+.box-1 {
+    background-color: rgb(243, 38, 151);
+    color: yellow;
+}
+
+.box-2 {
+    background-color: rgb(216, 162, 92);
+    color: red;
+}
+
+.box-3 {
+    background-color: rgb(6, 124, 6);
+}
+
+.box-5 {
+    background-color: coral;
+    color: yellow;
+}

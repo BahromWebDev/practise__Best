@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <title>Form Layout</title>
+    <style>
+        body {
+            background-color: rgb(176, 196, 196);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="form-floating mb-3 mt-3">
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+            <label for="email-input">Email</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="password" class="form-control" id="password-input" placeholder="12345678">
+            <label for="password-input">password</label>
+        </div>
+
+        <form class="form-floating mb-3">
+            <input type="email" class="form-control is-invalid" id="invalid-input" placeholder="email">
+            <label for="invalid-input">Noto'g'ri kiritilgan ma'lumotlar</label>
+        </form>
+
+        <div class="form-floating">
+            <textarea class="form-control" id="textarea" placeholder="Izoh"></textarea>
+            <label for="textarea">Izohlar uchum</label>
+        </div>
+
+        <div class="form-floating mt-3">
+            <select  id="select" class="form-select" aria-label="Floating label select example">
+                <option selected>Country</option>
+                <option value="1">Uzbekistan</option>
+                <option value="2">USA</option>
+                <option value="3">Russian</option>
+                <option value="4">Japan</option>
+                <option value="5">Germany</option>
+            </select>
+            <label for="select">Country</label>
+        </div>
+    </div>
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Ism">
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" placeholder="12345678" aria-label="password">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 mt-5">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="name">
+            </div>
+            <div class="col-md-6">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="12345678"
+                id="password">
+            </div>
+            <div class="col-md-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-12">
+                <label for="text" class="form-label">Info</label>
+                <textarea class="form-control" id="text"></textarea>
+            </div>
+            <div class="col-md-5">
+                <label for="Adress" class="form-label">Adress</label>
+                <input type="text" class="form-control" placeholder="Adress" id="Adress">
+            </div>
+            <div class="col-md-4">
+                <label for="Adress" class="form-label">Select Country</label>
+                <select class="form-select">
+                    <option selected>Country</option>
+                    <option value="1">Asia</option>
+                    <option value="2">USA</option>
+                    <option value="3">Russian</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="Adress" class="form-label">Type in ID</label>
+                <input type="text" class="form-control" placeholder="ID CODE">
+            </div>
+            <div class="col-md-12">
+                <input type="checkbox" class="form-check-input" name="default" id="checkeck-checkbox">
+                <label class="form-check-label" for="checkeck-checkbox">
+                    Select
+                </label>
+            </div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="container">
+        <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    First radio
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Second radio
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                  <label class="form-check-label" for="gridRadios3">
+                    Third disabled radio
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Example checkbox
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+    </div>
+      <!-- Bootstrap.js -->
+      <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

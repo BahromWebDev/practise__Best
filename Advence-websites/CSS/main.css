@@ -1,0 +1,237 @@
+/* Main header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    border-bottom: 5px solid yellowgreen;
+    animation: animate 6s linear;
+}
+
+header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    /* animation: animate 3s linear; */
+    position: relative;
+    transition: all 1s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100px);
+        visibility: hidden;
+    }
+
+    50% {
+        transform: rotateY(10deg);
+        visibility: hidden;
+    }
+
+    100% {
+        transform:;
+    }
+}
+
+.conteiner {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    background-color: rgb(3, 151, 10);
+    position: fixed;
+    width: 100%;
+}
+
+header .conteiner img {
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header .conteiner .header-navigation__items .header-navigation__item {
+    display: inline-block;
+    padding: 20px;
+    align-items: center;
+    list-style: none;
+}
+
+header .conteiner .header-navigation__items .header-navigation__item a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ddd;
+    transition: all 0.5s;
+}
+
+header .conteiner .header-navigation__items .header-navigation__item a:hover {
+    color: yellow;
+}
+
+header .header-item__descrition input {
+    padding: 5px;
+    width: 60%;
+    box-sizing: border-box;
+    margin: 10px;
+    border: none;
+}
+
+header .header-item__descrition .btn {
+    border: none;
+    font-size: 15px;
+    padding: 4px;
+    color: black;
+    background-color: #ddd;
+    font-family: monospace;
+    width: 30%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+header .header-item__descrition .btn:hover {
+    border: none;
+    font-size: 15px;
+    padding: 4px;
+    color: #ddd;
+    background-color: black;
+    font-family: monospace;
+}
+
+/* /Main header */
+
+/* Main section */
+section .banner {
+    background-image: url("../image/home.jpg");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    animation: ani 2s linear;
+    transition: all 0.5s;
+    border-bottom: 10px solid yellowgreen;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateZ(100px);
+    }
+}
+/* /Main section */
+
+/* Main description */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #03976b;
+    background-color: #03970a;
+    cursor: pointer;
+    animation: mover-box 5s linear;
+}
+
+.info .box  {
+    border: 1px solid rgb(255, 187, 0);
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+
+.info .box p {
+    color: rgb(230, 255, 8);
+    width: 50%;
+    margin-left: 110px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info .box img {
+    width: 300px;
+    padding-top: 20px;
+}
+
+.info .box:hover {
+    background-color: #03976b;
+}
+
+@keyframes mover-box {
+    0% {
+       transform: translateX(-1000px) ;
+        visibility: hidden;
+        animation-delay: 5s;
+    }
+
+    50% {
+        transform: translateX(-100px);
+        visibility: hidden;
+        animation-delay: 3s;    
+    }
+    
+    100% {
+        visibility: visible;
+        animation-delay: 1s;
+    }
+}
+
+/* /Main description */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #60ff68;
+    height: 100px;
+    animation: footer-box 5s linear;
+
+}
+
+footer .main a  {
+    padding: 10px;
+    text-decoration: none;
+    font-size :20px;
+    transition: all 0.5s;
+}
+
+footer .main a:hover {
+    color: rgb(10, 87, 3);
+}
+
+footer ul .footer-navigation__item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer ul .footer-navigation__item  a:hover {
+    color: rgba(236, 145, 7, 0.877);
+}
+
+@keyframes footer-box {
+    0% {
+        transform: rotateY(10deg);
+        visibility: visible;
+    }
+
+    100% {
+        /* transform: rotate(180deg); */
+    }
+}
+
+/* Second section   */
+
+.introduction-item__blocks {
+    height: 60vh;
+    width: 100%;
+    background-color: #03970a;
+    margin-top: 100px;
+}

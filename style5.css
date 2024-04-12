@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./home.jpg"); 
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    width: 85%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;  
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    bottom: 260px;
+}
+
+.content h1,p {
+    color: #ddd;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.btn {
+    position: absolute;
+    bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 500px;
+    border: 1px solid #4314c4;
+    background-color:#4314c4;
+    padding: 10px 15px; 
+    border-radius: 30px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.btn2 {
+    position: absolute;
+    bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 700px;
+    border: 1px solid #4314c4;
+    background: #009688;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.btn2:hover {
+    background-color:#12d3b3;
+}
+
+.btn::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.btn2::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.btn2:hover::after {
+    width: 100%;
+}

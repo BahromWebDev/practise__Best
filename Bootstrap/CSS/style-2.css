@@ -1,0 +1,12 @@
+.row {
+    margin-top: 20px;
+}
+
+.row > div{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: aquamarine;
+    colro: rgb(34, 31, 31);
+    text-align: center;
+    border: 1px solid blue;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <title>Talk About Column</title>
+</head>
+<style>
+
+    .row {
+        margin-top: 2rem;
+        /* width: 100%; */
+        /* height: 20vh; */
+        background-color: rgb(99, 99, 99);
+    }
+
+    .row > div {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: rgb(142, 228, 228);
+        border: 1px solid blue;
+        text-align: center;
+        color: #040013;
+    }
+
+
+</style>
+
+<body>
+
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 offset-md-4 ">
+                    .col-md-4 .offitset-md-4
+                </div>
+                <div class="row">
+                    <div class="col-md-3 offset-md-3">
+                        .col-md-3 .offitset-md-3
+                    </div>
+                    <div class="col-md-3 offset-md-3">
+                        .col-md-3 .offitset-md-3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        .col-md-6 .offitset-md-3
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

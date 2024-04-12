@@ -1,0 +1,64 @@
+.bo1 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition: all 4s ;
+    margin-bottom: 200px;
+}
+
+.bo1:hover {
+    width: 400px;
+    background-color: chartreuse;
+}
+
+.box {
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    transition: width 4s;
+    margin-bottom: 20px;
+}
+
+.box:hover {
+    width: 1000px;
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.cubic-bezier {
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.19, 1.46);
+}
+
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition: width 2s ;
+    transition-delay: 1s;
+    /* delayda kutasan 2sekunt hop */
+}
+
+.box2:hover {
+    width: 400px;
+    background-color: chartreuse;
+}
+

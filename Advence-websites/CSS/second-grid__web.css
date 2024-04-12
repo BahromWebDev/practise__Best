@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-wrapper {
+    display: grid;
+    background-color: #f1eaea;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "header menu menu menu"
+        "hero hero hero hero"
+        "main main main image"
+        "main main main extra"
+        "footer footer footer footer"
+    ;
+}
+
+.item {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(233, 231, 229);
+    font-family: sans-serif;
+    background: #2623da;
+    border: 1px solid rgb(144, 202, 10);
+}
+
+.item-1 {
+    grid-area: header;
+    background-color: #000;
+}
+
+.item-2 {
+    grid-area: menu;
+    background-color: coral;
+}
+
+.item-3 {
+    grid-area: hero;
+    background-color: rgb(11, 130, 235);
+}
+
+.item-4 {
+    grid-area: main;
+    grid-column: span 2;
+    background-color: rgb(13, 4, 53);
+}
+
+.item-5 {
+    grid-area: image;
+    background-color: rgb(59, 236, 5);
+}
+
+.item-6 {
+    grid-area: extra;
+    background-color: rgb(18, 71, 1);
+}
+
+.item-7 {
+    grid-area: footer;
+    background-color: rgb(209, 120, 4);
+}
+
+@media (max-width: 990px) {
+    .grid-wrapper {
+        /* grid-template-columns: repeat(3, 1fr); */
+        height: 80vh;
+        width: 100%;
+        grid-template-rows: repeat(5, 80px 250px 220px 200px 190px);
+        grid-auto-flow: column;
+        grid-template-areas: 
+            "header header header"
+            "hero hero hero "
+            "menu main main "
+            "menu footer footer"
+            "menu extra image"
+        ;
+    }
+
+    .item-1,
+    .item-3 {
+    }
+
+    /* .item-2 {
+       grid-area: 3  /1  / 6 / 1;
+    } */
+
+    /* .item-7 {
+        grid-column: span 2;
+    } */
+
+    /* .item-5 {
+        grid-column: span 2;
+    } */
+}
+
+@media (max-width: 767px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 90px 80px 150px 150px 120px 120px 100px );
+        grid-template-areas: 
+            "header"
+            "menu"
+            "hero"
+            "main"
+            "footer"
+            "extra"
+            "image"
+            ;
+    }
+}
+

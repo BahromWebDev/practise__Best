@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-around ;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.flex-item {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.parent-flex {
+    margin-top: 50px;
+    display: flex;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.flex-son {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.flex-direction {
+    margin-top: 100px;
+}
+
+.flex-direction {
+    display: flex;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.flex-direction__item {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.flex-wrap {
+    display: flex;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: rgb(138, 222, 135);
+    border-radius: 10px;
+    /* flex-wrap: wrap-reverse;
+    flex-direction: row; */
+    flex-flow: row-reverse wrap;
+}
+
+.flex-wrap__item {
+    padding: 60px 25px;
+    background-color: #cdeffd;
+    font-weight: bold;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: rgb(138, 222, 135);
+    border-radius: 10px;    
+    justify-content: space-evenly;
+}
+
+.content__item {
+    padding: 60px 45px;
+    background-color: #cdeffd;
+    font-weight: bold;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.align-item {
+    display: flex;
+    margin-top: 100px;
+    height: 400px;
+    padding: 20px;
+    background-color: rgb(138, 222, 135);
+    border-radius: 10px;    
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+.align-item__item {
+    padding: 60px 45px;
+    background-color: #cdeffd;
+    font-weight: bold;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.flex-orders {
+    display: flex;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: rgb(138, 222, 135);
+    border-radius: 10px;  
+}
+
+.flex-orders__item {
+    padding: 60px 45px;
+    background-color: #cdeffd;
+    font-weight: bold;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.order-minus-5 {
+    align-self: flex-end;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-10 {
+    order: 10;
+}
+
+.flex-basis {
+    flex: 0 0 100px;
+}

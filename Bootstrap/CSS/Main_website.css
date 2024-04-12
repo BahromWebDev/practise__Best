@@ -1,0 +1,98 @@
+/* Home and Navbar section start here */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+.navbar-light .navbar-nav .navbar-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.home {
+   background-color: #f0f5f9; 
+   padding: 150px 0 100px 0;
+}
+
+.home .home-img {
+    border-radius: 30px;
+    width: 90%;
+}
+
+/* /Home and Navbar section finished here */
+
+/* About section start here */
+.about__card-1 {
+    background-color: #e8ebe7 !important;
+}
+
+.about__card-2 {
+    background-color: #bedcf1 !important;
+}
+
+.about__card-3 {
+    background-color: #f1efe7 !important;
+    border-radius: 15px !important;
+}
+
+.about__card-img {
+    width: 80px;
+    border-radius: 50px;
+}
+
+/* /About section finished here */
+
+/* Features section start here */
+.features__container {
+    background-color: #f0f5f9;
+}   
+
+.fa-check {
+    color: rgb(31, 82, 1);
+}
+
+.Features .features__container .row .col-12 img {
+    border-radius: 30px !important;
+    padding: 20px;
+}
+/* /Features section finished her */
+
+/* Results section start here */
+.results_img-1 {
+    padding: 10px 5px;
+    font-size: 50px;
+}
+/* /Results section finished here */
+
+/* Reviews section start here */
+
+.reviews_carousel {
+    background-color: #627c88;
+    border-radius: 15px;
+    margin: 50px;
+}
+
+.reviews_container {
+    background-color: #f0f5f9;
+    padding: 70px 50px !important;
+    border-radius: 30px;
+}
+
+.carousel-inner {
+    padding: 0px 60px !important;
+    margin: 10px;
+}
+
+.reviews_h2 {
+    font-size: 45px;
+}
+
+

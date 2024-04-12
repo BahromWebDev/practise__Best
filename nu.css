@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.banner {
+    background-color: #021142;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 5px solid rgb(228, 61, 0);
+}
+
+
+.info ul li {
+    display: inline-block;
+    list-style-type:none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.info ul li a {
+    text-decoration: none;]
+    font-size: 20px;
+    padding: 20px;
+    color: #ddd;
+}   
+
+.description {
+    color: #ddd;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.description input {
+    border: 2px solid pink;
+    border-radius: 20px;
+    padding: 3px;
+    padding-right: 10px;
+    width: 40%;
+}
+
+.description label {
+    padding-right: 5px;
+}
+
+.btn {
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #ddd;
+    background-position: right center;
+}
+
+/* /.Main section */
+/* 
+                        <img src="./food.jpg" class="logo"/>
+                        <img src="./somsa.jpg" class="image"/>
+                        <img src="food2.jpg" class="book"/>
+                        <img src="./app.jpg" class="app"/> */
+                        /* <img src="./uzb.jpg" class="uzb" /> */
+.can {
+    background-image: url("./gul.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 1%;
+}
+
+.can .section h1 {
+    width: 200px;   
+    position: absolute;
+    right: 30%;
+}
+
+.can .section p {
+    width: 400px;
+    position: absolute;
+    right: 15.3%;
+    top: 150px;
+
+}
+
+.navbar {
+    padding: 0px;
+    margin: 0;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    position: absolute; 
+    padding-right: 5px;
+}
+
+.image {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    padding-left: 5px;
+}
+/* <img src="./food.jpg" class="logo"/>
+<img src="./somsa.jpg" class="image"/>
+<img src="food2.jpg" class="book"/>
+<img src="./app.jpg" class="app"/> */ 
+/* <img src="./uzb.jpg" class="uzb" /> */
+
+
+.book {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    top: 100px ; 
+    padding-top: 5px; 
+    padding-left: 5px;
+}
+
+.app {
+    width: 200px; 
+    height: 400px;
+    position: absolute;
+    left: 400px;
+    padding-left:10px;
+}
+
+.uzb {
+    position: absolute;
+    top: 200px;
+    width: 400px;
+    height: 178px;
+    padding-top: 20px;
+   
+}
+
+.can .section .btn {
+    position: absolute;
+    right: 30%;
+    top: 380px;
+    width: 200px;   
+}
+/* footer section  */
+
+.footer {
+    background-color:#021142;
+    text-align: center;
+}
+
+.footer img {
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.footer .ul li {
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+
+.footer .ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size:20px;
+}
+
+.footer .footer__socials li {
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.footer .footer__socials li a:hover {
+    color: #ddd;
+}
+
+
+.footer p {
+    color :#fff;
+    padding-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 0px;
+}

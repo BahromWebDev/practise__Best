@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {    
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.header {
+    background-color: #05364d;
+    color: #ddd;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid coral;
+}
+
+span {
+    color: coral;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    padding-top: 7px;
+}
+
+.navbar  {
+    background-image: url("./ty.jpg");
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: bottom top;
+}
+
+.box {
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    top: 40px;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+.box p {
+    color: black;
+}
+
+.content {
+    padding: 6px 7px;
+    background:#05364d;
+    width: 100%;    
+    position: relative;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ddd;
+    font-family: sans-serif;    
+}
+
+input {
+    position: absolute;
+    right: 125px;
+    top: 6px;
+    padding: 2px;
+}
+
+.clr {
+    clear: both;
+}
+
+.main  img{
+    width: 120px;
+}
+
+.banner {
+    background-color: #667b9b;
+    width: 33.333%;
+    float: left;
+    text-align: center;
+}
+
+.banner .main {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.banner .main-section__info {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.footer {
+    background:#05364d;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid #05364d;
+    line-height: 60px;
+    color: #ddd;
+    font-family:sans-serif;
+}
+
+
+
+

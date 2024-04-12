@@ -1,0 +1,247 @@
+body {
+    scroll-behavior: smooth;
+}
+/* Home top section start here */
+#home {
+    background-image: url('../IMAGE/night.avif');
+    height: 100vh;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-nav li a {
+    color: #4192c4;
+    font-weight: bold;
+}
+
+.navbar-nav li {
+    transition: 0.5s ease;
+}
+
+.navbar-nav a:hover {
+    color: #435e86;
+}
+
+.dropdown-menu {
+    background-color:  rgb(223, 223, 223);;
+}
+
+#btn {
+    margin-left: 15px;
+    background: transparent;
+    color: #4192c4;
+    border: 2px solid #4192c4;
+    transition: 0.5s ease;
+}
+
+#btn:hover {
+    background-color: rgb(27, 123, 139);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.navbar-toggler{
+    color: #fff;
+}
+
+/* Home top section finished here */
+
+/* Home bottom section start here */
+
+.home_content {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home_content img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.heading_home {
+    color: rgb(182, 198, 221);
+    font-size: 40px;
+}
+
+.heading_des {
+    color: #7086a7;
+}
+
+.social-media i{
+    color: #071f61;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+#btn-2 {
+    background-color: transparent;
+    color: #012527;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.5s ease;
+    border: 2px solid #fff;
+}
+
+#btn-2:hover {
+    background-color: #5677b3;
+    color: #171817;
+}
+
+/* Home bottom section finished here */
+
+/* About section start here */ 
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #c6c6d6; 
+    padding-top: 30px;
+}
+
+.home_img {
+    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    #about {
+        height: 130vh;
+    }
+}
+/* /About section finished here */
+
+/* My Skills section start here */
+#skills {
+    height: 100vh;
+    width: 100%;
+    background-color: #031724;
+}
+
+.heading_home {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #54dee6;
+}
+
+.skill_content h3,h5{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.progress {
+    border: 2px solid #fff;
+    background-color: #031724;
+}
+
+@media screen and (max-width:768px) {
+    #skills {
+        height: 110vh;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #home {
+        width: 100%;
+        height: 100vh;
+    }
+    #skills {
+        height: 180vh;
+    }
+}
+
+/* /My Skills section finished here */
+.testimonial {
+    width: 65%;
+    height: 85vh;
+    margin: auto;
+    position: relative;
+}
+
+.heading_testimonial {
+    font-size: 40px;
+    color: #071f61;
+    margin: 14px 0px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.testimonial_container {
+    padding: 23px 0px;
+    margin: 52px 0px;
+}
+
+.img_testimonial {
+    width: 420px;
+    height: 320px;
+}
+
+.para_testimonial {
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.614);
+}
+
+.para_testimonial i {
+    color: rgb(238, 238, 4);
+}
+
+.profile_testimonial {
+    margin: 20px 0px;
+    display: flex;
+}
+
+.image_profile {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+}
+
+.clients_testimonial {
+    display: flex;
+    flex-direction: column;
+}
+
+.clients_testimonial p{
+    padding: 0;
+    margin: 0 11px;
+}
+
+.name {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 3px 0px;
+    color: black;
+}
+
+.Proffession {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.598);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -147px;
+}
+
+.carousel-indicators button{
+    background-color: rgb(255, 0, 0) !important;
+}
+
+@media screen and (max-width: 400px) {
+    .testimonial {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+    }
+}

@@ -1,0 +1,46 @@
+ .parent-box {
+    margin-top: 100px;
+    border: 5px solid blue;
+    width: 50%;
+}
+ 
+.box {
+    height: 50px;    
+    width: 550px;
+    background-color: red;
+    transform:  rotate(45deg);
+    transform-origin: center;
+} 
+
+/* transformning rotate hodisasini ko'rdik 
+    bunda selector qiyalaydi
+*/
+
+
+.translate {
+    margin-top: 300px;
+    width: 300px;
+    height: 300px;
+    background-color: palegreen;
+    transform: translateX(40px);
+    /* turgan joyidan siljitadi y x oqlari boyicha masalan  */
+}
+
+.scale {
+    width: 300px;
+    height: 300px;
+    background-color:cadetblue;
+    transform: scale(2,3);
+    margin-top: 400px;
+    /* selectorni kichraytiradi va kattartiradi misol uchun */
+}
+
+.skewa {
+    width: 300px;
+    height: 300px;
+    background-color: cornflowerblue;
+    transform: skewY(120deg);
+    transform: skewX(20deg);
+    margin-top: 400px;
+    margin-left: 100px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+            <style>
+                .box {
+                    width: 500px;
+                    height: 400px;
+                    background-color: coral;
+                }
+
+                @media only screen and (max-width: 500px) {
+                    .box {
+                        background-color: red;
+                        color: #ddd;
+                    }
+                }
+
+                @media only screen and (max-width: 400px) {
+                    .box {
+                        background-color: blue;
+                        font-size: 50px
+                        color: yellow;
+                    }       /* 1 narsaga etibor beraylik ketmaketlik muhim tartib bilan */
+                }
+
+                @media only screen and (max-width: 300px) {
+                    .box {
+                        background-color: green;
+                        font-size: 40px;
+                        color: red;
+                    }
+                }
+            </style>
+</head>
+<body>
+            <div class="box">
+                400px da qizil 600px kok 900 px da esa yashil boladi ekan
+            </div>
+</body>
+</html>

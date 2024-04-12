@@ -1,0 +1,811 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #19211A;
+}
+
+header nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+}
+
+header nav {
+    width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    background-color: #19211A;
+}
+
+header nav h1 {
+    color: #dddd;
+    font-size: 40px
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.header__info p {
+    color: #ffffff;
+    font-size: 4.7rem;
+}
+
+.header__info {
+    padding-top: 100px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #19211A;
+    color: #fff;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 7px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color:#19211A;
+    background-color: #fff;
+}
+
+/* Basic ends here */
+/* Header start here */
+
+.main {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+        'box-1 box-2'
+        'box-3 box-4'
+        'box-5 box-6'
+    ;
+}
+
+.main-items {
+    color: #fff;
+}
+
+.item-1 {
+    grid-area: box-1;
+}
+
+.item-1 {
+}
+
+.item-2 {
+    grid-area: box-2;
+}
+
+.item-3 {
+    grid-area: box-3;
+}
+
+.item-4 {
+    grid-area: box-4;
+}
+
+.item-5 {
+    grid-area: box-5;
+}
+
+.item-6 {
+    grid-area: box-6;
+}
+
+/* /Header ends here */
+
+.img {
+    overflow: hidden;
+    border-radius: 40px ;
+}
+
+.img-1 img {
+    width: 100%;
+    height: 85vh;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.img-1 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-1 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-1 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+.img-1 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-2 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-1 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+/* Img-2 here */
+
+.img {
+    overflow: hidden;
+    border-radius: 40px ;
+}
+
+.img-2 img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.img-2 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-2 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-2 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+.img-2 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-2 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-2 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+/* Img-2 ends here */
+
+/* Img-3 start here */
+
+.img {
+    overflow: hidden;
+    border-radius: 40px ;
+}
+
+.img-3 img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.img-3 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-3 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-3 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+.img-3 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-3 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-3 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+/* Img-3 ends here */
+
+/* Img-4 start here */
+
+.img {
+    overflow: hidden;
+    border-radius: 40px ;
+}
+
+.img-4 img {
+    width: 100%;
+    height: 85vh;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.img-4 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-4 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-4 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+.img-4 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-4 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-4 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+/* Img-4 ends here */
+
+/* Img-5 start here */
+
+
+.img {
+    overflow: hidden;
+    border-radius: 40px ;
+}
+
+.img-5 img {
+    width: 100%;
+    height: 85vh;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.img-5 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-5 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-5 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+.img-5 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-5 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-5 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+/* img-5 ends here */
+
+/* Img-6 start here */
+
+
+.img {
+    overflow: hidden;
+    border-radius: 40px ;
+}
+
+.img-6 img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.img-6 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-6 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-6 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+
+.img-6 img:hover {
+    transform: scale(1.1);
+    outline: hidden;
+}
+
+.img-6 h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.img-6 h2 {
+    padding: 0px 10px;
+    color: #797997;
+}
+/* Img-6 ends here */
+
+.btn-2 {
+        margin-bottom: 100px;
+        background-color: #19211A;
+        width: 50%;
+        color: #fff;
+        outline: none;
+        border: 1px solid #ddd;
+        padding: 7px 25px;
+        font-size: 18px;
+        border-radius: 30px;
+        margin-top: 40px;
+        transition: 0.5s;
+        cursor: pointer;
+}
+    
+.btn-2:hover {
+    color:#19211A;
+    background-color: #fff;
+}
+/* Navbar start here */
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+.navbar .navbar__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.navbar__info  {
+    padding-top: 20px;
+    width: 50%;
+}
+
+.navbar__info p {
+    line-height: 22px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.btn-3 {
+    margin-bottom: 100px;
+    background-color: #19211A;
+    width: 30%;
+    color: #fff;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 7px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-3:hover {
+    color:#19211A;
+    background-color: #fff;
+}
+/* /Navbar ends here */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-column-gap: 20px ;
+}
+
+.banner-card__image img {
+    width: 100%;
+    display: inline-block;
+    height: 55vh;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.banner-img img {
+    width: 100%;
+    display: inline-block;
+    height: 45vh;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.banner-card__image img:hover,
+.banner-img img:hover {
+    transform: scale(1.1);
+}
+
+.images {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.banner__card h1 {
+    color: #fff;
+    padding: 5px 0;
+}
+
+.banner__description a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 30px;
+    color: #797979;
+    border: 1px solid #797979;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.banner__description a:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-4 {
+    margin-bottom: 100px;
+    background-color: #19211A;
+    width: 50%;
+    color: #fff;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 7px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 40px;
+    transition: 0.5s;
+    cursor: pointer; 
+}
+
+.btn-4:hover {
+    color:#19211A;
+    background-color: #fff;
+}
+
+/* /Banner ends here */
+/* Footer top start here */
+.footer__top {
+    margin: 150px 0;
+}
+
+.footer__top .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 200px 400px 200px);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.menu h1 {
+    color: #797979;
+}
+
+.menu nav ul li {
+    list-style-type: none;
+    padding: 4px 0;
+}
+
+.menu nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu__link .address {
+    margin-top: 20px;
+}
+
+.menu__info{
+    width: 100%;
+    display: block;
+}
+
+.menu__info h2 {
+    color:#797979;
+    font-size: 24px;
+}
+
+.menu__info p {
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
+    width: 100vh;
+}
+
+.menu .menu__btn a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid rgb(150, 149, 148);
+    top: 140px;
+    left: -200px;
+    padding: 3px 14.2px;
+    text-align: center;
+    border-radius: 2rem;
+    color: #797979;
+    transition: 0.5s;
+}
+
+.menu .menu__btn a:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* footer top ends here */
+
+/* footer bottom start here */
+
+.footer h1 {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.footer {
+    margin: 30px 0;
+}
+
+.footer__info {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+}
+
+.footer__info h3 {
+    color: #797979;
+    font-size: 15px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    header nav {
+        
+    }
+
+    .navbar__info p {
+        font-size: 14px;
+        width: 200%;
+    }
+
+    .menu__info {
+        display: none;
+    }
+
+    .menu {
+        padding-left: 50px ;
+    }
+
+    .get-touch  {
+        padding-left: 200px;
+    }
+
+    .menu__btn {
+        display: none;
+    }
+
+    .footer h1 {
+        font-size: 50px;
+        margin: 10px 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+        header nav ul li {
+            display: none;
+        }
+
+        header h1 {
+            margin: 0 auto;
+        }
+
+        .header__info p {
+            font-size: 30px;
+        }
+
+        .main__info {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .banner {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .banner-card__image img {
+            height: 100vh;
+        }
+        .banner-img img {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .menu h1 {
+            font-size :30px
+        }
+
+        .menu nav {
+            padding: 15px 0;
+        }
+
+        .menu nav ul li {
+            padding: 10px 0;
+        }
+
+        .menu nav ul li a{
+            font-size: 24px;
+        }
+
+        .get-touch {
+            padding-left: 50px;
+            font-size: 24px;
+        }
+
+        section.footer h1 {
+            font-size: 40px;
+        }
+
+        .footer h1 {
+            position: relative;
+            top: -75px; 
+        }
+
+        .footer__info  {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .footer__info h3 {
+            font-size: 18px;
+        }
+}
+
+@media only screen and (max-width: 550px) {
+
+    header nav h1 {
+       display: block;
+    }
+
+    .header__info p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+            'box-1'
+            'box-2'
+            'box-3'
+            'box-4'
+            'box-5'
+            'box-6'
+        ;
+    }
+
+    .navbar__image  {
+        widtH: 100%;
+        height: 100vh;
+    }
+
+    button.btn-3 {
+        font-size: 18px;
+        width: 40%;
+    }
+
+    button.btn,
+    button.btn-2,
+    button.bt-4 {
+        width: 40%;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .footer__top {
+        display: none;
+    }
+
+    section.footer h1 {
+        font-size: 25px;
+    }
+
+    .footer h1 {
+        position: relative;
+        top: -75px; 
+    }
+
+    .footer__info  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .footer__info h3 {
+        font-size: 16px;
+    }
+}

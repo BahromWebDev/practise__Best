@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transform</title>
+    <style>
+        .parent-box {
+            width: 500px;
+            height: 500px;
+            border: 5px solid blue;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            /* transform: perspective(1000px) rotate3d(1, 2, -1, 30deg); */
+            transform: rotateX(25deg);
+            background-color: red;
+            transition: 4s;
+        }
+
+            /* Misol uchun bu */
+        .box:hover {
+            transform: rotateY(180deg);
+            width: 100%;
+        }
+
+        .main {
+            margin-top: 200px; 
+            width: 500px;
+            height: 500px;
+            background-color: rgb(0, 189, 16);
+            transform: perspective(100px) translate3d(10px, 20px, -50px);
+        }
+
+        .contenet {
+            width: 500px;
+            height: 500px;
+            border: 5px solid rgb(236, 14, 14);
+        }
+
+        .exmple {
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite; 
+            transform-origin: left top;
+            transform: scale3d(2, 3, 4);           
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+        <div class="parent-box">
+            <div class="box">X oqi boyicha 3D transform</div>
+        </div>
+
+        <div class="main">
+                <h1>                translatega ega quti</h1>
+        </div>
+
+
+        <div class="contenet">
+            <div class="exmple">
+                <h1>X oqi boyicha 2 barobar Y oqi boyicha 3 va Z oqi boyicha 4 barobar</h1>
+            </div>
+        </div>
+</body>
+</html>

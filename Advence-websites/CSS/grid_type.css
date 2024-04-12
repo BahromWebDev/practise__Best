@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: rgb(16, 231, 88);
+    color: blue;
+    /* grid-template-areas:
+       "header header header header"
+       "nav main sidebar adver"
+       "footer footer footer footer"
+       ; */
+}
+.item {
+    background-color: rgb(4, 226, 226);
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.item-1  {
+    grid-column: span 4;
+}
+
+.item-2 {
+    grid-row: span 2; 
+}
+
+.item-3 {
+    grid-column: span 2 ;  
+    grid-row: span 2;
+}
+ 
+.item-6 {
+    grid-column: span 4; 
+} 
+
+@media (max-width: 767px) {
+    .conteiner {
+        grid-template-columns: repeat(3, 1fr);
+        height: 100vh ;
+          grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "sidebar main advertise"
+            "footer footer footer"
+       ; 
+    }
+
+    .item-1  {
+       grid-area: header;
+    }
+    
+    .item-2 {
+       grid-area: nav;
+    }
+    
+    .item-3 {
+       grid-area: main;
+    }
+
+    .item-4 {
+        grid-area: sidebar;
+    }
+
+    .item-5 {
+        grid-area: advertise;
+    }
+     
+    .item-6 {
+        
+        grid-area: footer;
+    } 
+
+}
+
+@media (max-width: 600px) {
+    .conteiner {    
+        grid-template-columns: repeat(1, 1fr);
+          grid-template-areas:
+            "header "
+            "nav"
+            "sidebar"
+            "main"
+            "advertise"
+            "footer"
+       ; 
+    }
+
+    .item-1  {
+       grid-area: header;
+    }
+    
+    .item-2 {
+       grid-area: nav;
+    }
+    
+    .item-3 {
+       grid-area: main;
+    }
+
+    .item-4 {
+        grid-area: sidebar;
+    }
+
+    .item-5 {
+        grid-area: advertise;
+    }
+     
+    .item-6 {
+        
+        grid-area: footer;
+    } 
+
+}

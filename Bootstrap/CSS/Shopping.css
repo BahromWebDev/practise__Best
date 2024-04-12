@@ -1,0 +1,765 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: #a9a9a926;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.top-icons {
+    margin-left: 45px;
+}
+
+.top-icons {
+    font-size: 20px;
+    color: #1c1c50;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.other-links {
+    margin-right: 33px;
+}
+
+.other-links {
+    color:#1c1c50;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btn-login {
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    height: 5vh;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#btn-login a {
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+
+#btn-login a:hover {
+    background-color: #1c1c50 ;
+    color: white;
+
+}
+
+#btn-login:hover {
+    background-color: #1c1c50;
+    color: white;
+}
+
+#btn-signup {
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    height: 5vh;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#btn-signup a {
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+
+#btn-signup a:hover {
+    background-color: #1c1c50 ;
+    color: white;
+
+}
+
+#btn-signup:hover {
+    background-color: #1c1c50;
+    color: white;
+}   
+
+@media screen and (max-width: 500px) {
+    .top-icons {
+        margin-left: 30px;
+    }
+
+    .top-icons i {
+        font-size: 15px;
+    }
+
+    .other-links i {
+        font-size: 15px;
+    }
+    #btn-login {
+        width: 60px;
+        height: 5vh;
+    }
+    #btn-signup {
+        width: 80px;
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .top-icons {
+        margin-left: 10px;
+    }
+    .top-icons i {
+        font-size: 12px;
+    }
+    .other-links {
+        margin-right: 10px;
+    }
+    .other-links i {
+        font-size: 12px;
+    }
+    #btn-login {
+        width: 40px;
+        height: 5vh;
+        font-size: 10px;
+    }
+    #btn-signup {
+        width: 50px;
+        height: 5vh;
+        font-size: 10px;
+    }
+}
+
+/* home section start here */
+.home-section {
+    width: 100%;
+    height: 93vh;
+}
+
+/* navbar */
+#navbar {
+    background-color: #1c1c50;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar .nav-link {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+
+#navbar .nav-link:hover {
+    color: #fff;
+    border-radius: 5px;
+}
+.dropdown li a{
+    color: #fff;
+}
+
+#search-btn {
+    color: white;
+    border: 1px solid white;
+}
+
+#search-btn:hover {
+    background-color: #1c1c50;
+}
+/* /navbar */
+/* home content */
+.home {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home .img {
+    flex: 1 1 400px;
+}
+
+.home .img img {
+    width: 100%;
+    margin-top: 70px;
+    padding-right: 5px;
+}
+
+.home .content {
+    flex: 1 1 400px;
+    margin-top: 100px;
+}
+
+.content h3 {
+    margin-left: 70px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #1c1c50;
+    font-weight: bold;
+}
+
+.content h3 span {
+    font-size: 40px;
+}
+
+.content p {
+    margin-left: 70px;
+    color: #1c1c50;
+}
+
+.content #shopnow {
+    margin-left: 70px;
+    width: 200px;
+    height: 38px;
+    border:2px solid #1c1c50;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.content #shopnow:hover {
+    background-color: #1c1c50;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-section {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-section {
+        height: 60vh;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    .content h3 {
+        margin-left: 50px;
+        font-size: 40px;
+    }
+
+    .content p {
+        margin-left: 50px;
+    }
+
+    .content #shopnow {
+        margin-left: 50px;
+    }
+}
+
+@media  screen and (max-width: 799px) {
+    .home-section {
+        height: 80vh;
+    }
+}
+
+@media  screen and (max-width: 550px) {
+    .home-section {
+        height: 70vh;
+    }
+}
+/* home content */
+/* home section finished here */
+
+/* Top Cards */
+#top-cards {
+    margin-left: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#top-cards .card img {
+    height: 40vh;
+}
+
+#top-cards h5 {
+    color: #1c1c50;
+    font-weight: bold;
+}
+
+#top-cards button{
+    width: 150px;
+    height: 33px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: transparent;
+    color: #1c1c50;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#top-cards button:hover {
+    background-color: #1c1c50;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    #top-cards {
+        padding-top: 380px;
+        margin: 0 auto;
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #top-cards {
+        margin: 0 auto;
+    }
+}
+/* /Top Cards */
+
+/* Banner section start here */
+.banner {
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../IMAGE/backkk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner .content {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.banner .content h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+
+.banner .content p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+
+#bannerbtn button {
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+}
+
+#bannerbtn button:hover {
+    background-color: #1c1c50;
+    border: none;
+}
+
+/* /Banner section finished here */
+
+/* product cards */
+#product-cards {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+}
+#product-cards .card {
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+.card img {
+    height: 40vh;
+}
+
+#product-cards h1 {
+    margin-top: 30px;
+    color: #1c1c50;
+    text-shadow: 1px 1px 1px black;
+}
+
+#product-cards h3 {
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    color: #1c1c50;
+}
+
+#product-cards h5 span{
+    float: right;
+    color: #1c1c50;
+    cursor: pointer;
+}
+
+.checked {
+    color: rgb(255, 187, 0);
+}
+
+#viewmorebtn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 32px;
+    color: #1c1c50;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;   
+    padding: 5px;
+}
+
+#viewmorebtn:hover {
+    background-color: #1c1c50;
+    color: white;
+}
+/* product cards */
+
+/* offer  */
+#offer {
+    margin-top: 50px;
+}
+
+#offer i{
+    font-size: 60px;
+    color: #1c1c50;
+}
+/* offer */
+
+/* footer section start here */
+#footer {
+    padding: 0 0 30px 0;
+    color: #d0d0d0;
+    font-size: 14ox;
+    background-color: #1c1c50;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer .footer-top {
+    padding: 60px 0 30px;
+    background-color: #1c1c50;
+    color: #fff;
+}
+
+#footer .footer-top .footer-contact h3{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 300px 0;
+    padding: 2px 0 2px 0;
+    font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+    font-weight: 700;
+    font-weight: 700;
+}
+
+#footer .footer-top .footer-contact h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child{
+    padding: 0;
+}
+
+#footer .footer-top .footer-links ul li a{
+    color: #fff;
+    line-height: 2;
+}
+
+#footer .footer-top .social-links a{
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    padding-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s ease;
+}
+
+#foooter .copyright {
+    text-align: center;
+    float: left;
+}
+
+#footer .credits {
+    float: right;
+}
+
+.bod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* footer section finished here */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    position: fixed;
+    background-color: #1c1c50;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+/* Login */
+.login {
+    width: 50%;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#side1 {
+    margin-top: 40px;
+    background-color: #1c1c50;
+    height: 76vh;
+    border-radius: 5px;
+}
+
+#side1 h3{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+#side1 p{
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+#btn {
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#side2 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    text-align: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+#side2 h3{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #1c1c50;
+    font-weight: bold;
+}
+
+#side2 .inp{
+    margin-top: 52px;
+}
+
+#side2 input{
+    width: 500px;
+    height: 36px;
+    align-items: center;
+    margin-top: 20px;
+    outline-color: rgb(4, 99, 116);
+}
+
+#side2 p{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#side2 .icons i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#login {
+    margin-top: 10px;
+}
+
+#login button{
+    width: 200px;
+    height: 32px;
+    color: #fff;
+    background-color: #1c1c50;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    #side2 input{
+        width: 300px;
+    }
+}
+/* Login */
+
+/* Banner section start here */
+.banner2 {
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../IMAGE/backb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner2 .content2 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.banner2 .content2 h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+
+.banner2 .content2 p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+
+#bannerbtn2 button {
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+}
+
+#bannerbtn2 button:hover {
+    background-color: #1c1c50;
+    border: none;
+}
+
+/* /Banner section finished here */
+
+/* About section start here */
+#about {
+    margin-top: 50px;
+}
+
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    color: #1c1c50;
+}
+
+.about_img img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #1c1c50;
+    border-radius: 15px;
+}
+/* /About section finished here */
+
+/* Contact section start here */
+#contact {
+    margin-top: 50px;
+}
+
+#contact h1{
+    color: #1c1c50;
+    text-shadow: 0px 0px 1px black;
+}
+
+#contact .card{
+    height: 80px;
+    margin-top: 20px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+#contact .card i {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#contact .card h6{
+    margin-left: 10px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+#messagebtn button {
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+}
+
+#messagebtn button:hover {
+    background-color: #1c1c50;
+    color: #fff;
+}
+/* /Contact section finished here */
